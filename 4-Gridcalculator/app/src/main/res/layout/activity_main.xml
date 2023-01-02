@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="269dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/n1"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter number" />
+
+        <EditText
+            android:id="@+id/n2"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter number" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="414dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="362dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:text="Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.461" />
+</androidx.constraintlayout.widget.ConstraintLayout>
